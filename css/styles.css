@@ -1086,7 +1086,6 @@ img {
 .footer-container-global {
   display: flex;
   align-items: baseline;
-  justify-content: left;
 }
 
 @media only screen and (min-width: 428px) and (max-width: 1157px) {
@@ -1100,7 +1099,11 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-container-global {
-    flex-direction: column;
+    flex-wrap: wrap;
+    width: 584px;
+    gap: 72px 24px;
+    flex-direction: unset;
+    justify-content: left;
   }
 }
 
@@ -1133,15 +1136,6 @@ img {
 @media only screen and (min-width: 428px) and (max-width: 767px) {
   .footer-par {
     text-align: center;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
-  .footer-logo-and-socials {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 24px;
   }
 }
 
