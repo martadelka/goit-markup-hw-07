@@ -379,6 +379,8 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -558,10 +560,13 @@ img {
 
 .hero {
     display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: var(--modal-overlay);
     padding-top: 112px;
     padding-bottom: 112px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/header/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/header/Dark-bgmob@1x.jpg);
     max-width: 428px;
     padding-left: 27px;
     padding-right: 27px;
@@ -580,6 +585,39 @@ img {
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+@media only screen and (max-width: 428px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/header/Dark-bgmob@1x.jpg);
+  }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/header/Dark-bgmob@2x.jpg);
+      }
+    }
+}
+
+@media only screen and (min-width: 429px) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/header/Dark-bgtabl@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/header/Dark-bgtabl@2x.jpg);
+  }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/header/people-office\ 1desc@1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/header/people-office\ 1desc@2x.jpg);
+  }
+}
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
