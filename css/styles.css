@@ -537,6 +537,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .adress-link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .button {
     color: var(--white-background);
     background-color: var(--primary-brand);
@@ -567,12 +574,10 @@ img {
     padding-top: 112px;
     padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/header/Dark-bgmob@1x.jpg);
-    max-width: 428px;
-    padding-left: 27px;
-    padding-right: 27px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -609,7 +614,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1158px) {
+@media only screen and (min-width: 769px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/header/people-office\ 1desc@1x.jpg);
   }
@@ -663,7 +668,7 @@ img {
 }
 
 .first-h {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.02em;
@@ -671,7 +676,7 @@ img {
     margin-bottom: 8px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .first-h {
     text-align: center;
   }
@@ -690,12 +695,20 @@ img {
 }
 
 .first-p {
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
     color: var(--text);
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .first-p {
+    font-weight: 400;
+  }
+}
+
 
 .what-we-do {
     font-size: 36px;
@@ -710,6 +723,12 @@ img {
 .team {
     background-color: var(--light);
     padding: 120px 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .team {
+    padding: 96px 0;
+  }
 }
 
 .our-team {
@@ -730,7 +749,7 @@ img {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .first-li {
     width: 264px;
   }
@@ -748,7 +767,7 @@ img {
     padding: 100px 0;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 1157px) {
+@media only screen and (min-width: 320px) and (max-width: 1157px) {
   .footer {
     padding: 96px 0;
   }
@@ -878,7 +897,7 @@ img {
     padding: 120px 0;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .info-sect {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -898,11 +917,11 @@ img {
     list-style: none;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .info-list {
-    flex-direction: column;
     flex-wrap: wrap;
     gap: 72px;
+    align-items: center;
   }
 }
 
@@ -918,7 +937,7 @@ img {
     width: calc((100% - 72px) / 4);
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .info-element {
     width: 396px;
   }
@@ -956,8 +975,9 @@ img {
     gap: 24px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .team-list {
+    gap: 72px;
     flex-direction: column;
     align-items: center;
   }
@@ -1057,12 +1077,19 @@ img {
   padding-bottom: 120px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
 .customers-list {
   display: flex;
   gap: 24px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .customers-list {
     flex-wrap: wrap;
     gap: 16px;
@@ -1082,7 +1109,7 @@ img {
   height: 88px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .customers-items {
     width: calc((100% - 16px) / 2);
   }
@@ -1126,7 +1153,7 @@ img {
   align-items: baseline;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 1157px) {
+@media only screen and (min-width: 320px) and (max-width: 1157px) {
   .footer-container-global {
     flex-wrap: wrap;
     flex-direction: column;
@@ -1149,7 +1176,7 @@ img {
   margin-right: 120px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .footer-container {
     margin: 0;
     text-align: center;
@@ -1171,7 +1198,7 @@ img {
   margin-bottom: 16px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .footer-par {
     text-align: center;
   }
@@ -1306,7 +1333,7 @@ input {
   margin-left: 80px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .subscribe-form {
     margin-left: 0;
     text-align: center;
@@ -1325,11 +1352,12 @@ input {
   gap: 24px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .subscribe-form-wrapper {
+    display: flex;
+    column-gap: 24px;
+    align-content: stretch;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -1356,9 +1384,9 @@ input {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .subscribe-form-input {
-    width: 398px;
+    width: 100%;
   }
 }
 
@@ -1375,8 +1403,9 @@ input {
   height: 40px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 1157px) {
+@media only screen and (min-width: 320px) and (max-width: 1157px) {
   .subscribe-btn {
+    margin: 0 auto;
     width: 165px;
   }
 }
